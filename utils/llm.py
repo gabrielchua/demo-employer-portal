@@ -13,7 +13,7 @@ ONLY if the job title is not accurate or precision, provide THREE alternative ti
 
 You will receive as input: JOB TITLE, JOB DESCRIPTION in a tuple.
 If the title is clear, your output will be "NIL".
-If the title is not clear, your output will be the new job title, without any elaboration or explanation.
+If the title is not clear, your output will ONLY be the new job title. DO NOT INCLUDE any elaboration or explanation or scoring
 
 Generic titles like "manager" or "assistant" would be considered not clear.
 
