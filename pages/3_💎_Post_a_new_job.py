@@ -166,4 +166,4 @@ else:
     if back_home:
         reset()
         switch_page("home")
-    st.info("For more info on Job Re-Design, please contact XXX.")
+    st.info("For more info on Job Redesign, please contact XXX.")
