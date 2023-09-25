@@ -15,4 +15,4 @@ st.title("View Job Posting 🔍")
 selected_job = st.selectbox("**Select Job**", ["<choose one>", "A", "B", "C"])
 
 if selected_job != "<choose one>":
-    st.info("Hello "*100)
+    st.info("*insert posted JD and AI-powered feedback*")

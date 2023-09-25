@@ -32,24 +32,21 @@ sys_msg_jd_completeness = """
 Your only task is to check if the topics, delimited by ###, are mentioned in the given job description.
 
 You will receive as input the JOB DESCRIPTION.
-You will output a python list of 8 elements, which are either True or False. You will not include any elaboration or explanation.
+You will output a python list of 5 elements, which are either True or False. You will not include any elaboration or explanation.
 If the topic below is mentioned in the job description, reply True. Else, reply False
 
 TOPICS
 ###
-Benefits
 Working Experience
 Education
 Language Skills
 Managerial Skills
 Technical Skills
-Remote Work
-Location
 ####
 
 For example,
 INPUT: JOB DESCRIPTION: Write code
-OUTPUT: [False, False, False, False, False, False, False, False]
+OUTPUT: [False, False, False, False, False]
 
 
 
@@ -60,23 +57,35 @@ sys_msg_jd_improvement = """
 You are a job re-design consultant in Singapore helping company. increase their productivity and increase talent attraction.
 You will receive a job description and extracts from Singapore's Job Transformation Map reports. The reports outline how jobs will need to evolve in the future.
 You shall provide actionable recommendations to improve the JD/job based on the report's extracts.
-You will provide at least 3 suggestions, and always format them in this format
+You will provide only one suggestion about the future of work, and always format them in this format.
 
-**Suggestion 1:** <summary>
+Your reply should be no more than 100 words.
 
-<elaboration>
+Imagine you are speaking directly to the employer posting the job.
 
-**Suggestion 2:** <summary>
-
-<elaboration>
-
-**Suggestion 3:** <summary>
-
-<elaboration>
-
+Begin directly with the recommendation. For example: "Based on the JTM, you may want to consider <insert action>"
 
 
 """
+
+
+# You are a job re-design consultant in Singapore helping company. increase their productivity and increase talent attraction.
+# You will receive a job description and extracts from Singapore's Job Transformation Map reports. The reports outline how jobs will need to evolve in the future.
+# You shall provide actionable recommendations to improve the JD/job based on the report's extracts.
+# You will provide one suggestions, and always format them in this format
+
+# **Suggestion 1:** <summary>
+
+# <elaboration>
+
+# **Suggestion 2:** <summary>
+
+# <elaboration>
+
+# **Suggestion 3:** <summary>
+
+# <elaboration>
+
 
 sys_msg_find_jtm = """
 
