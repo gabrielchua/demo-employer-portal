@@ -73,6 +73,13 @@ desc_placeholder = ""
 ####################################################
 st.title("Post a New Job ⚡")
 
+st.write("This application is in Alpha (v0.0.1, last updated 09/10/2023).")
+col1, col2 = st.columns(2)
+col1.info("🚨 Your prompts will not be stored by commercial vendors, but will be logged in LaunchPad to improve our services. LaunchPad currently supports data classified up to Restricted and Sensitive (Normal)")
+col2.info("🤝 By using the service, you acknowledge that you recognise the possibility of AI generating inaccurate or wrong responses, and you take full responsibility over how you use the generated output.")
+st.warning("⚠️ This application is by powered by a Large Language Model (LLMs) and you can use it to generate job posting suggestions. Treat this as a helpful AI assistant that can provide initial ideas for you to refine")
+st.warning("⚠️ Never trust the responses at face value. If in doubt, don't use the given response. ")
+
 if st.session_state['submitted'] == False:
 
     with st.expander("**FOR DEMO PURPOSES ONLY**"):

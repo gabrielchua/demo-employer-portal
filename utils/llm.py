@@ -103,7 +103,7 @@ food_manufacturing
 food_services
 hotel
 human_resources
-in_house_corporate_finance_and_accounting
+in_house_finance_and_accounting
 information_and_communications
 land_transport
 logistics
